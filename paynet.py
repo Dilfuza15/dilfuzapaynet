@@ -34,3 +34,6 @@ def test_language_switch_to_uz():
         EC.element_to_be_clickable((By.CLASS_NAME, "w-dropdown-toggle"))
     )
     lang_dropdown.click()
+
+# Тест 4 — Переключение языка (проверим изменение URL на /ru)
+def test_language_switch_to_ru()
