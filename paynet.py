@@ -36,4 +36,14 @@ def test_language_switch_to_uz():
     lang_dropdown.click()
 
 # Тест 4 — Переключение языка (проверим изменение URL на /ru)
-def test_language_switch_to_ru()
+def test_language_switch_to_ru():
+    driver = webdriver.Chrome()
+    driver.get("https://wwww.paynet.uz/")
+
+    wait = WebDriverWait(driver, 20)
+
+    # Шаг 1: Клик по кнопке расрытия меню языков
+    Lang_dropdown = wait.until(
+        EC.element_to_be_clickable((By.CLASS_NAME, "w-dropdown-toggle"))
+    )
+    lang_dropdown.click()
